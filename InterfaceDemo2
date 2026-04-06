@@ -1,0 +1,22 @@
+interface Vehicle
+{
+    String NAME="110";
+    void msg();
+}
+class Car implements Vehicle
+{
+    int cno=6789;
+    public void msg()
+    {
+        System.out.println("Vehicle name:"+NAME);
+        System.out.println("Vehicle no:"+cno);
+    }
+}
+class InterfaceDemo2
+{
+    public static void main(String arg[])
+    {
+        Car ob=new Car();
+        ob.msg();
+    }
+}
